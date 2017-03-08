@@ -16,13 +16,16 @@ public class Tasca4 {
     }
 
     String entrarDataAmbDef(String missatgeExplicatiu, String defaultValue){
-    String defecte;
+    String defecte; // defecte es igual a defaultValue - No cal que el posis de nou
     boolean dataOk;
     dataOk = esData(?????????);
     Scanner data = new Scanner(System.in);
+      // No tinc molt clar com funciona el Scanner pero quan l'usuari t'envia un 'Enter' has de guardar les dades
+      // Un cop tens les dades guardades comproves si es igual a "" (es a dir, length == 0). Si ho es, tornes defaultValue
+      // Si no es == a "" has de mirar si es data... boolean b = esData(data) -> Si no es data error! I el que toqui
     do{
     System.out.print(missatgeExplicatiu);
-    if (!dataOk){
+    if (!dataOk){ // Si ho fas aixi, dataOK ha de ser true si l'usuari ha posat una data o has assignat el default
     data.next();
     System.out.println("Data no vàlida! Torna-hi.");
     }
