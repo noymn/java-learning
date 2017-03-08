@@ -35,6 +35,27 @@ public class Tasca4 {
         return defecte;
     }
 
+    String entrarDataAmbDef2(String missatgeExplicatiu, String defaultValue) {
+        // Obtenim el input del usuari
+        String input = entrarCadena(???) // podem reaprofitar la primera no?
+
+        do {
+            // Comprovem si el input es buit, si no assignem defaultValue
+            if (????){
+                input = ?????;
+            }
+
+            // Es correcte?
+            boolean dataOk = esData( ?????????); // Potser podem fer servir el input?
+            if (!dataOk) {
+                // Error message
+            }
+
+        } while(!dataOk) {
+
+        return input;
+    }
+
     boolean esData(String data) {
 
         if (!caractersCorrectes(data)) {
